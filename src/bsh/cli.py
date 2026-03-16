@@ -58,7 +58,8 @@ def web_command() -> None:
         bsh-web
     """
     print("启动 BSH Web 查看界面...")
-    subprocess.run([sys.executable, "-m", "streamlit", "run", "bsh.web.app"])
+    # 使用实际的 Python 文件路径
+    subprocess.run([sys.executable, "-m", "streamlit", "run", "src/bsh/web/app.py"])
 
 
 if __name__ == "__main__":
