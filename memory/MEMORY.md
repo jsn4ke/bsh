@@ -42,6 +42,27 @@
 
 ---
 
+## API 客户端
+
+### FetchParams 数据类
+
+用于构建 API 请求参数，转换为 API 需要的命名格式（驼峰转大写下划线）。
+
+### ApiClient 类
+
+| 方法 | 说明 |
+|------|------|
+| `fetch_products(params: FetchParams)` | 获取产品列表（单次请求） |
+| `fetch_all_products()` | 获取所有产品（分页处理） |
+
+### 错误处理
+
+- 网络错误重试：根据 `max_retries` 配置自动重试
+- HTTP 状态码检查：非 200 状态码抛出 RuntimeError
+- 超时处理：根据 `timeout` 配置处理请求超时
+
+---
+
 ## 数据模型字段
 
 ### ProductModel
