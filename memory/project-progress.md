@@ -131,20 +131,20 @@ test: 添加 repository 测试
 
 | ID | 任务名称 | 文件 | 状态 |
 |----|----------|------|------|
-| 1.1 | 更新 src/__init__.py 导出 | src/__init__.py | ⏳ 待开始 |
-| 1.2 | 更新 src/models/__init__.py 导出 | src/models/__init__.py | ⏳ 待开始 |
-| 1.3 | 更新 src/config/__init__.py 导出 | src/config/__init__.py | ⏳ 待开始 |
-| 1.4 | 更新 src/scraper/__init__.py 导出 | src/scraper/__init__.py | ⏳ 待开始 |
-| 1.5 | 更新 src/repository/__init__.py 导出 | src/repository/__init__.py | ⏳ 待开始 |
-| 1.6 | 更新 src/calculator/__init__.py 导出 | src/calculator/__init__.py | ⏳ 待开始 |
-| 1.7 | 测试模块导出 | tests/test_exports.py | ⏳ 待开始 |
-| 2.1 | 创建 src/cli.py 基础结构 | src/cli.py | ⏳ 待开始 |
-| 2.2 | 实现 fetch_command 函数 | src/cli.py | ⏳ 待开始 |
-| 2.3 | 实现 web_command 函数 | src/cli.py | ⏳ 待开始 |
-| 2.4 | 添加 pyproject.toml 入口点配置 | pyproject.toml | ⏳ 待开始 |
-| 2.5 | 测试 CLI 命令 | tests/test_cli.py | ⏳ 待开始 |
-| 3.1 | 更新 pyproject.toml 版本号 | pyproject.toml | ⏳ 待开始 |
-| 3.2 | 更新 src/__init__.py 版本号 | src/__init__.py | ⏳ 待开始 |
+| 1.1 | 更新 src/__init__.py 导出 | src/__init__.py | ✅ 完成 |
+| 1.2 | 更新 src/models/__init__.py 导出 | src/models/__init__.py | ✅ 完成 |
+| 1.3 | 更新 src/config/__init__.py 导出 | src/config/__init__.py | ✅ 完成 |
+| 1.4 | 更新 src/scraper/__init__.py 导出 | src/scraper/__init__.py | ✅ 完成 |
+| 1.5 | 更新 src/repository/__init__.py 导出 | src/repository/__init__.py | ✅ 完成 |
+| 1.6 | 更新 src/calculator/__init__.py 导出 | src/calculator/__init__.py | ✅ 完成 |
+| 1.7 | 测试模块导出 | tests/test_exports.py | ✅ 完成 |
+| 2.1 | 创建 src/cli.py 基础结构 | src/cli.py | ✅ 完成 |
+| 2.2 | 实现 fetch_command 函数 | src/cli.py | ✅ 完成 |
+| 2.3 | 实现 web_command 函数 | src/cli.py | ✅ 完成 |
+| 2.4 | 添加 pyproject.toml 入口点配置 | pyproject.toml | ✅ 完成 |
+| 2.5 | 测试 CLI 命令 | tests/test_cli.py | ✅ 完成 |
+| 3.1 | 更新 pyproject.toml 版本号 | pyproject.toml | ✅ 完成 |
+| 3.2 | 更新 src/__init__.py 版本号 | src/__init__.py | ✅ 完成 |
 
 ---
 
@@ -152,14 +152,14 @@ test: 添加 repository 测试
 
 | ID | 任务名称 | 文件 | 状态 |
 |----|----------|------|------|
-| 4.1 | 研究 URL 生成规则 | doc/url-research.md | ⏳ 待开始 |
-| 4.2 | 确定 URL 模式并验证 | doc/url-research.md | ⏳ 待开始 |
-| 5.1 | ProductModel 添加 prd_id 字段 | src/models/product.py | ⏳ 待开始 |
-| 5.2 | ProductModel 添加 prd_category 字段 | src/models/product.py | ⏳ 待开始 |
-| 5.3 | ProductModel 添加 detail_page_url 字段 | src/models/product.py | ⏳ 待开始 |
-| 5.4 | Parser 添加 build_detail_url 方法 | src/scraper/parser.py | ⏳ 待开始 |
-| 5.5 | 更新 CSV 表头 | src/repository/csv_repository.py | ⏳ 待开始 |
-| 5.6 | 添加 URL 字段测试 | tests/test_product.py | ⏳ 待开始 |
+| 4.1 | 研究 URL 生成规则 | doc/url-research.md | ✅ 完成 |
+| 4.2 | 确定 URL 模式并验证 | doc/url-research.md | ✅ 完成 |
+| 5.1 | ProductModel 添加 prd_id 字段 | src/models/product.py | ✅ 完成 |
+| 5.2 | ProductModel 添加 prd_category 字段 | src/models/product.py | ✅ 完成 |
+| 5.3 | ProductModel 添加 detail_page_url 字段 | src/models/product.py | ✅ 完成 |
+| 5.4 | Parser 添加 build_detail_url 方法 | src/scraper/parser.py | ✅ 完成 |
+| 5.5 | 更新 CSV 表头 | src/repository/csv_repository.py | ✅ 完成 |
+| 5.6 | 添加 URL 字段测试 | tests/test_product.py | ✅ 完成 |
 
 ---
 
@@ -167,17 +167,17 @@ test: 添加 repository 测试
 
 | ID | 任务名称 | 文件 | 状态 |
 |----|----------|------|------|
-| 6.1 | pyproject.toml 添加 streamlit 依赖 | pyproject.toml | ⏳ 待开始 |
-| 6.2 | 创建 src/web/__init__.py | src/web/__init__.py | ⏳ 待开始 |
-| 6.3 | 创建 src/web/app.py 基础结构 | src/web/app.py | ⏳ 待开始 |
-| 6.4 | 实现 load_products 函数 | src/web/app.py | ⏳ 待开始 |
-| 6.5 | 实现产品列表展示 | src/web/app.py | ⏳ 待开始 |
-| 6.6 | 实现侧边栏筛选器 | src/web/app.py | ⏳ 待开始 |
-| 7.1 | 添加数据统计面板 | src/web/app.py | ⏳ 待开始 |
-| 7.2 | 添加产品详情视图 | src/web/app.py | ⏳ 待开始 |
-| 7.3 | 添加搜索功能 | src/web/app.py | ⏳ 待开始 |
-| 8.1 | 创建 tests/test_web.py | tests/test_web.py | ⏳ 待开始 |
-| 8.2 | 实现 Web 模块单元测试 | tests/test_web.py | ⏳ 待开始 |
+| 6.1 | pyproject.toml 添加 streamlit 依赖 | pyproject.toml | ✅ 完成 |
+| 6.2 | 创建 src/web/__init__.py | src/web/__init__.py | ✅ 完成 |
+| 6.3 | 创建 src/web/app.py 基础结构 | src/web/app.py | ✅ 完成 |
+| 6.4 | 实现 load_products 函数 | src/web/app.py | ✅ 完成 |
+| 6.5 | 实现产品列表展示 | src/web/app.py | ✅ 完成 |
+| 6.6 | 实现侧边栏筛选器 | src/web/app.py | ✅ 完成 |
+| 7.1 | 添加数据统计面板 | src/web/app.py | ✅ 完成 |
+| 7.2 | 添加产品详情视图 | src/web/app.py | ✅ 完成 |
+| 7.3 | 添加搜索功能 | src/web/app.py | ✅ 完成 |
+| 8.1 | 创建 tests/test_web.py | tests/test_web.py | ✅ 完成 |
+| 8.2 | 实现 Web 模块单元测试 | tests/test_web.py | ✅ 完成 |
 
 ---
 
@@ -185,10 +185,10 @@ test: 添加 repository 测试
 
 | ID | 任务名称 | 文件 | 状态 |
 |----|----------|------|------|
-| 9.1 | 更新 README.md 添加库使用说明 | README.md | ⏳ 待开始 |
-| 9.2 | 更新 README.md 添加 Web 查看说明 | README.md | ⏳ 待开始 |
-| 9.3 | 创建 MANIFEST.in | MANIFEST.in | ⏳ 待开始 |
-| 9.4 | 验证 LICENSE 文件 | LICENSE | ⏳ 待开始 |
+| 9.1 | 更新 README.md 添加库使用说明 | README.md | ✅ 完成 |
+| 9.2 | 更新 README.md 添加 Web 查看说明 | README.md | ✅ 完成 |
+| 9.3 | 创建 MANIFEST.in | MANIFEST.in | ✅ 完成 |
+| 9.4 | 验证 LICENSE 文件 | LICENSE | ✅ 完成 |
 
 ---
 
