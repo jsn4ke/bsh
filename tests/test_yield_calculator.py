@@ -2,7 +2,7 @@
 
 import pytest
 
-from src.calculator.yield_calculator import YieldCalculator
+from bsh.calculator.yield_calculator import YieldCalculator
 
 
 class TestCalculateFromNav:

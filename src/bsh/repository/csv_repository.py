@@ -2,8 +2,8 @@
 import csv
 import os
 
-from src.models.product import ProductModel
-from src.repository.base import BaseRepository
+from bsh.models.product import ProductModel
+from bsh.repository.base import BaseRepository
 
 
 class CsvRepository(BaseRepository):  # type: ignore[abstract]

@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from src.config.settings import Settings, get_settings
+from bsh.config.settings import Settings, get_settings
 
 
 class TestSettings:

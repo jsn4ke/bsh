@@ -17,7 +17,12 @@
       "Bash(DATA_DIR=output venv/Scripts/python:*)",
       "Bash(venv/Scripts/python:*)",
       "Bash(../venv/Scripts/python:*)",
-      "Bash(find output:*)"
+      "Bash(find output:*)",
+      "Bash(venv/Scripts/python.exe:*)",
+      "Bash(cp:*)",
+      "Bash(wc:*)",
+      "Bash(venv/Scripts/pip.exe install:*)",
+      "Bash(sed:*)"
     ]
   }
 }

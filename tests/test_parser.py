@@ -1,7 +1,7 @@
 """数据解析器测试"""
 
-from src.models.product import ProductModel
-from src.scraper.parser import Parser
+from bsh.models.product import ProductModel
+from bsh.scraper.parser import Parser
 
 
 class TestParserLabels:

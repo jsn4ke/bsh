@@ -5,8 +5,8 @@ import os
 import tempfile
 from unittest.mock import Mock
 
-from src.models.product import ProductModel
-from src.repository.factory import RepositoryFactory
+from bsh.models.product import ProductModel
+from bsh.repository.factory import RepositoryFactory
 
 
 def _create_test_product(code: str, name: str = "测试产品") -> dict:

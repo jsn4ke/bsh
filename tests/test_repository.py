@@ -1,8 +1,8 @@
 """Repository 测试"""
 from unittest.mock import Mock
 
-from src.repository.base import BaseRepository
-from src.repository.factory import RepositoryFactory
+from bsh.repository.base import BaseRepository
+from bsh.repository.factory import RepositoryFactory
 
 
 def test_is_abstract() -> None:

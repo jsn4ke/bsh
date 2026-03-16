@@ -3,7 +3,7 @@
 import re
 from typing import Any
 
-from src.models.product import ProductModel
+from bsh.models.product import ProductModel
 
 
 class Parser:

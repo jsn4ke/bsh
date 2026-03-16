@@ -4,10 +4,10 @@
 """
 import logging
 
-from src.config.settings import get_settings
-from src.repository.factory import RepositoryFactory
-from src.scraper.api_client import ApiClient
-from src.scraper.parser import Parser
+from bsh.config.settings import get_settings
+from bsh.repository.factory import RepositoryFactory
+from bsh.scraper.api_client import ApiClient
+from bsh.scraper.parser import Parser
 
 # 配置日志
 logging.basicConfig(

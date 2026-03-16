@@ -5,8 +5,8 @@ import time
 import requests
 from pydantic import BaseModel
 
-from src.config.settings import Settings
-from src.models.product import APIResponse
+from bsh.config.settings import Settings
+from bsh.models.product import APIResponse
 
 
 class FetchParams(BaseModel):
