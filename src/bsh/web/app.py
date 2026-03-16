@@ -1,5 +1,6 @@
 """Streamlit Web 应用"""
 import pandas as pd
+import streamlit as st
 
 from bsh.repository import RepositoryFactory
 from bsh.models.product import ProductModel
@@ -69,6 +70,21 @@ def main() -> None:
     st.subheader(f"查询结果: {len(filtered_df)} 条")
 
     if len(filtered_df) > 0:
+        # 数据统计面板
+        with st.expander("📊 数据统计"):
+            col1, col2 = st.columns(2)
+
+            with col1:
+                st.subheader("风险等级分布")
+                risk_counts = df["risk_level"].value_counts().sort_index()
+                st.bar_chart(risk_counts)
+
+            with col2:
+                st.subheader("币种统计")
+                currency_counts = df["curr_type"].value_counts().sort_index()
+                st.bar_chart(currency_counts)
+
+        # 产品列表
         st.dataframe(
             filtered_df,
             column_config={
@@ -83,6 +99,19 @@ def main() -> None:
             use_container_width=True,
             hide_index=True,
         )
+
+        # 产品详情视图
+        st.divider()
+        st.subheader("📋 产品详情")
+        selected_product = st.selectbox(
+            "选择产品查看详情",
+            options=filtered_df["prd_code"].tolist(),
+            format_func=lambda x: filtered_df[filtered_df["prd_code"] == x]["prd_name"].iloc[0],
+        )
+
+        if selected_product:
+            product_data = filtered_df[filtered_df["prd_code"] == selected_product].iloc[0]
+            st.json(product_data.to_dict())
     else:
         st.info("没有匹配的产品")
 
