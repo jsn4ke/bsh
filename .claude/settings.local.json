@@ -22,7 +22,8 @@
       "Bash(cp:*)",
       "Bash(wc:*)",
       "Bash(venv/Scripts/pip.exe install:*)",
-      "Bash(sed:*)"
+      "Bash(sed:*)",
+      "Bash(venv/Scripts/pip.exe list:*)"
     ]
   }
 }

@@ -96,7 +96,7 @@ def main() -> None:
                 "pfirst_amt": st.column_config.NumberColumn("起售金额", format="%.0f"),
                 "sold_out": st.column_config.CheckboxColumn("是否售罄"),
             },
-            use_container_width=True,
+            width='stretch',
             hide_index=True,
         )
 
@@ -117,4 +117,7 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    # 当使用 streamlit run 时，Streamlit 会自动调用 main()
+    # 当直接运行脚本时，才需要手动调用
+    # 这里注释掉调用，避免 Streamlit 运行时重复调用
+    # main()
