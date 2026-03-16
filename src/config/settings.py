@@ -25,7 +25,7 @@ class Settings(BaseModel):
         description="最大重试次数",
     )
     page_size: int = Field(
-        default=10,
+        default=50,
         description="分页大小",
     )
     data_dir: Path = Field(

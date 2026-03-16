@@ -27,7 +27,7 @@ class ProductModel(BaseModel):
     # 其他信息
     risk_level: int | None = Field(None, description="风险等级 0-5")
     curr_type: str | None = Field(None, description="币种 CNY/USD")
-    pfirst_amt: int | None = Field(None, description="起售金额")
+    pfirst_amt: float | None = Field(None, description="起售金额(单位:元)")
     sold_out: int | None = Field(None, description="是否售罄 0=否 1=是")
     prd_labels: str | None = Field(None, description="产品标签 @!@分隔")
 

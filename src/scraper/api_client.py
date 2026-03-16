@@ -65,6 +65,12 @@ class ApiClient:
         """
         self.settings = settings
         self.session = requests.Session()
+        # 设置 User-Agent
+        self.session.headers.update({
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+        })
+        # 访问产品页面获取 session
+        self.session.get('https://www.bosc.cn/zh/gryw/tzlc/lc/zxcpxx/', timeout=10)
 
     def fetch_products(self, params: FetchParams) -> APIResponse:
         """获取产品列表（单次请求）
