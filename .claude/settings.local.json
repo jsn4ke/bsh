@@ -33,7 +33,18 @@
       "Bash(venv/Scripts/pip show:*)",
       "Bash(venv/Scripts/shbank-fetch.exe:*)",
       "Bash(find tests:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(venv/Scripts/pip search:*)",
+      "Bash(test_env/Scripts/pip install:*)",
+      "Bash(/d/goes/bsh/test_install/test_env/Scripts/pip install:*)",
+      "Bash(/d/goes/bsh/test_install/test_env/Scripts/pip list:*)",
+      "Bash(/d/goes/bsh/test_install/test_env/Scripts/shbank-fetch.exe:*)",
+      "Bash(/d/goes/bsh/test_install/test_env/Scripts/python:*)",
+      "Bash(PYTHONIOENCODING=utf-8 /d/goes/bsh/venv/Scripts/python:*)",
+      "Bash(/d/goes/bsh/test_install/test_env/Scripts/pip show:*)",
+      "Bash(/d/goes/bsh/venv/Scripts/pip install:*)",
+      "Bash(/d/goes/bsh/venv/Scripts/shbank-fetch.exe:*)",
+      "Bash(venv/Scripts/shbank-web.exe:*)"
     ]
   }
 }

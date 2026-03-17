@@ -67,8 +67,18 @@ def web_command() -> None:
         shbank-web
     """
     print("启动 BSH Web 查看界面...")
-    # 使用实际的 Python 文件路径
-    subprocess.run([sys.executable, "-m", "streamlit", "run", "src/js_shbank/web/app.py"])
+    # 运行 js_shbank.web.app 模块
+    import js_shbank.web.app
+    import streamlit.web.cli as stcli
+    from streamlit.runtime.scriptrunner import ScriptRunContext
+    from streamlit import runtime
+
+    # 获取当前文件路径
+    import os
+    app_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "web", "app.py"))
+
+    # 使用 streamlit 命令行运行
+    sys.argv = ["streamlit", "run", app_path]
 
 
 if __name__ == "__main__":

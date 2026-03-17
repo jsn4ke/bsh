@@ -12,7 +12,7 @@
 
 ## 版本
 
-**当前版本**: 0.0.2
+**当前版本**: 0.0.4
 
 详见 [doc/v0.0.2-plan.md](doc/v0.0.2-plan.md) 和 [doc/v0.0.3-plan.md](doc/v0.0.3-plan.md)
 
@@ -98,7 +98,7 @@ shbank-web
 venv\Scripts\activate
 
 # 启动 Web 界面
-streamlit run bsh.web.app
+streamlit run js_shbank.web.app
 ```
 
 ### 功能说明
@@ -200,7 +200,7 @@ python -m src.main
 ```
 bsh/
 ├── src/
-│   └── bsh/
+│   └── js_shbank/
 │       ├── config/              # 配置管理
 │       │   ├── __init__.py
 │       │   └── settings.py    # Settings 类，支持环境变量
